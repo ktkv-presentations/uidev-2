@@ -23,193 +23,716 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
+                    <h1>Разработка структуры Web-узла</h1>
                     <img
                         class="r-stretch"
-                        src="https://goqr.me/"
+                        src="https://ktkv-presentations.github.io/uidev-2"
                         data-type="qrcode" />
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <section>
+                        <h1>Веб-узел</h1>
+                        <p>
+                            совокупность веб-страниц, связанных между собой
+                            общей тематикой, дизайном и навигацией, размещенных
+                            на одном сервере
+                        </p>
+                        <img src="assets/web-resource.png" alt="" />
+                    </section>
+                    <section>
+                        <h1>Веб-страницы</h1>
+                        <p>
+                            HTML-документы, содержащие информацию и элементы
+                            взаимодействия
+                        </p>
+                        <img src="assets/page.png" alt="" />
+                        <pre><code data-trim class="html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>...&lt;/title>
+&lt;/head>
+&lt;body>
+    ...
+&lt;/body>
+&lt;/html>
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>Ресурсы</h1>
+                        <p>
+                            изображения, стили, скрипты, видео и другие
+                            мультимедиа-файлы
+                        </p>
+                        <img src="assets/file-formats.webp" alt="" />
+                    </section>
+                    <section>
+                        <h1>Серверная часть</h1>
+                        <p>
+                            база данных, серверные скрипты и API для обеспечения
+                            функциональности
+                        </p>
+                        <img src="assets/back.png" alt="" />
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>HyperText Markup Language</h1>
+                        <h3>HTML</h3>
+                        <p>
+                            язык разметки гипертекста, основной инструмент для
+                            создания веб-страниц
+                        </p>
+                        <hr />
+                        <h3>Тэг</h3>
+                        <p>
+                            основные строительные блоки веб-страниц, которые
+                            используются для разметки контента
+                        </p>
+                        <div>
+                            <i>
+                                элемент, заключенный в угловые скобки (&lt; >)
+                            </i>
+                        </div>
+                        <pre><code data-trim class="html">
+&lt;html> &lt;-- открывающий тег
+    Контент тега HTML &lt;-- содержимое/контент тега
+&lt;/html> &lt;-- закрывающий тег (у некоторых тегов отсутствует)
+                    </code></pre>
+                    </section>
+                    <section>
+                        <div
+                            style="font-size: 1.5rem"
+                            class="grid grid-cols-3 gap-4">
+                            <div class="border-b">
+                                <h3>HTML</h3>
+                                <p>
+                                    Создает основу: текст, заголовки,
+                                    изображения, формы.
+                                </p>
+                                <hr />
+                                <p>
+                                    Определяет семантические блоки:
+                                    <code>&lt;header></code>
+                                    ,
+                                    <code>&lt;main></code>
+                                    ,
+                                    <code>&lt;footer></code>
+                                    .
+                                </p>
+                                <hr />
+                                <p>
+                                    Включает гиперссылки для перехода между
+                                    страницами.
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h3>CSS</h3>
+                                <p>
+                                    Определяет цвета, шрифты, размеры элементов.
+                                </p>
+                                <hr />
+                                <p>
+                                    Устанавливает расположение блоков:
+                                    <code>flexbox</code>
+                                    ,
+                                    <code>grid</code>
+                                    .
+                                </p>
+                                <hr />
+                                <p>Реализует анимации и переходы.</p>
+                            </div>
+                            <div class="border-b">
+                                <h3>JavaScript</h3>
+                                <p>Добавляет интерактивные элементы</p>
+                                <hr />
+                                <p>Реализует взаимодействие с сервером</p>
+                                <hr />
+                                <p>
+                                    Управляет состоянием интерфейса в реальном
+                                    времени
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Этапы развития HTML</h1>
+                        <span
+                            style="
+                                justify-content: center;
+                                gap: 1rem;
+                                display: flex;
+                            ">
+                            <h2>HTML</h2>
+                            <h2>1.0</h2>
+                        </span>
+                        <p>
+                            первая версия языка, предложенная
+                            <b>Тимом Бернерсом-Ли</b>
+                            , которая позволяла связывать текстовые документы
+                            гиперссылками, создавая основу для простых
+                            веб-страниц
+                        </p>
+                        <pre class="r-stretch"><code class="html">
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 1.0//EN">
+&lt;html>
+&lt;head>
+    &lt;title>Sample HTML 1.0&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1>Welcome to HTML 1.0&lt;/h1>
+    &lt;p>This is a paragraph of text in HTML 1.0.&lt;/p>
+    &lt;ul>
+        &lt;li>Item 1&lt;/li>
+        &lt;li>Item 2&lt;/li>
+        &lt;li>Item 3&lt;/li>
+    &lt;/ul>
+    &lt;p>Enjoy learning HTML!&lt;/p>
+&lt;/body>
+&lt;/html>
+
+                    </code></pre>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Этапы развития HTML</h1>
+                        <span
+                            style="
+                                justify-content: center;
+                                gap: 1rem;
+                                display: flex;
+                            ">
+                            <h2>HTML</h2>
+                            <h2>4.0</h2>
+                        </span>
+                        <p>
+                            таблицы, формы, фреймы и возможности для работы с
+                            мультимедиа через плагины
+                        </p>
+                        <pre class="r-stretch"><code class="html">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>Sample HTML 4.01&lt;/title>
+    &lt;link rel="stylesheet" href="style.css">
+    &lt;script src="script.js">&lt;/script>
+&lt;/head>
+&lt;body>
+    &lt;h1>Welcome to HTML 4.01&lt;/h1>
+    &lt;p>This is a paragraph of text using HTML 4.01 with more features.&lt;/p>
+    
+    &lt;a href="https://example.com" target="_blank">Visit Example&lt;/a>
+
+    &lt;h2>Unordered List&lt;/h2>
+    &lt;ul>
+        &lt;li>Item 1&lt;/li>
+        &lt;li>Item 2&lt;/li>
+        &lt;li>Item 3&lt;/li>
+    &lt;/ul>
+
+    &lt;h2>Table Example&lt;/h2>
+    &lt;table border="1">
+        &lt;tr>
+            &lt;th>Name&lt;/th>
+            &lt;th>Age&lt;/th>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>John&lt;/td>
+            &lt;td>30&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>Jane&lt;/td>
+            &lt;td>25&lt;/td>
+        &lt;/tr>
+    &lt;/table>
+
+    &lt;form action="/submit" method="post">
+        &lt;label for="name">Name:&lt;/label>
+        &lt;input type="text" id="name" name="name">
+        &lt;input type="submit" value="Submit">
+    &lt;/form>
+&lt;/body>
+&lt;/html>
+                    </code></pre>
+                    </section>
+                    <section data-auto-animate>
+                        <h1>Этапы развития HTML</h1>
+                        <span
+                            style="
+                                justify-content: center;
+                                gap: 1rem;
+                                display: flex;
+                            ">
+                            <h2>HTML</h2>
+                            <h2>5</h2>
+                        </span>
+                        <p>
+                            семантические теги, встроенная поддержка видео и
+                            аудио, а также интеграция API для работы с
+                            геолокацией, веб-хранилищами и графикой
+                        </p>
+                        <pre class="r-stretch"><code class="html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;title>Sample HTML5&lt;/title>
+    &lt;link rel="stylesheet" href="style.css">
+    &lt;script src="script.js" defer>&lt;/script>
+&lt;/head>
+&lt;body>
+    &lt;header>
+        &lt;h1>Welcome to HTML5&lt;/h1>
+        &lt;nav>
+            &lt;ul>
+                &lt;li>&lt;a href="#home">Home&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#about">About&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#contact">Contact&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/nav>
+    &lt;/header>
+
+    &lt;section>
+        &lt;h2>HTML5 Features&lt;/h2>
+        &lt;p>This is a paragraph in an HTML5 document, with semantic elements and modern web features.&lt;/p>
+
+        &lt;article>
+            &lt;h3>New HTML5 Elements&lt;/h3>
+            &lt;p>HTML5 introduced semantic elements like &lt;code>&lt;article&gt;&lt;/code>, &lt;code>&lt;section&gt;&lt;/code>, and &lt;code>&lt;nav&gt;&lt;/code>.&lt;/p>
+        &lt;/article>
+
+        &lt;figure>
+            &lt;img src="example.jpg" alt="Example Image">
+            &lt;figcaption>An image showcasing HTML5 features&lt;/figcaption>
+        &lt;/figure>
+    &lt;/section>
+
+    &lt;footer>
+        &lt;p>&copy; 2025 HTML5 Example&lt;/p>
+    &lt;/footer>
+
+    &lt;form action="/submit" method="post">
+        &lt;label for="email">Email:&lt;/label>
+        &lt;input type="email" id="email" name="email" required>
+        &lt;input type="submit" value="Submit">
+    &lt;/form>
+
+    &lt;video width="320" height="240" controls>
+        &lt;source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    &lt;/video>
+&lt;/body>
+&lt;/html>
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h1>
+                            <a
+                                href="https://jgthms.com/web-design-in-4-minutes/"
+                                target="_blank">
+                                Веб-дизайн за 4 минуты
+                            </a>
+                        </h1>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Современные тенденции веб-разработки</h1>
+                        <h3>Доступность</h3>
+                        <h4>Accessibility</h4>
+                        <p>
+                            концепция, которая заключается в создании веб-сайтов
+                            и приложений, которые могут быть использованы людьми
+                            с различными ограничениями, такими как проблемы со
+                            зрением, слухом, моторикой или когнитивными
+                            способностями
+                        </p>
+                        <ul>
+                            <li>
+                                Текстовые альтернативы для визуальных элементов
+                            </li>
+
+                            <li>Поддержка клавиатурной навигации</li>
+                            <li>Цветовая контрастность</li>
+                            <li>Использование семантической разметки</li>
+                            <li>Адаптивность и мобильная версия</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>SEO</h3>
+                        <h4>Search Engine Optimization</h4>
+                        <p>
+                            процесс оптимизации веб-сайта таким образом, чтобы
+                            он был максимально видимым и удобным для поисковых
+                            систем
+                        </p>
+                        <ul>
+                            <li>Ключевые слова</li>
+                            <li>Семантическая структура</li>
+                            <li>Мобильная адаптивность</li>
+                            <li>Скорость загрузки</li>
+                            <li>Внешние и внутренние ссылки</li>
+                            <li>Адаптация к алгоритмам поисковых систем</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Целеполагание при разработке Web-страниц</h1>
+                        <p>
+                            этап, который помогает определить задачи и цели,
+                            которые сайт должен решать
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Определение целей сайта</h1>
+                        <p>
+                            Прежде чем начать разработку, важно четко понимать,
+                            что должен выполнять сайт
+                        </p>
+                        <h4>Например</h4>
+                        <ul>
+                            <li>Какую проблему решает сайт?</li>
+                            <li>Кто является целевой аудиторией?</li>
+                            <li>
+                                Какие действия должны совершать пользователи на
+                                сайте? (например, оформить покупку, подписаться
+                                на рассылку, прочитать статью)
+                            </li>
+                            <li>
+                                Какие ключевые показатели будут использоваться
+                                для оценки успеха сайта? (например, конверсии,
+                                время на сайте, количество просмотров)
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Типы целей сайта</h1>
+                        <ul>
+                            <li>
+                                <i>Информационные</i>
+                                : сайт предоставляет информацию, например,
+                                новости, блоги, статьи.
+                            </li>
+                            <li>
+                                <i>Коммерческие</i>
+                                : сайт имеет целью продажи товаров или услуг,
+                                например, интернет-магазины.
+                            </li>
+                            <li>
+                                <i>Интерактивные</i>
+                                : сайты, которые позволяют пользователям
+                                взаимодействовать, например, социальные сети,
+                                форумы.
+                            </li>
+                            <li>
+                                <i>Образовательные</i>
+                                : сайт используется для обучения или
+                                предоставления обучающих материалов.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Пользовательские цели</h1>
+                        <ul>
+                            <li>
+                                <i>Удобство и простота</i>
+                                : сайт должен быть простым в навигации и
+                                предоставлять пользователю удобный опыт.
+                            </li>
+                            <li>
+                                <i>Доступность</i>
+                                : сайт должен быть доступен для всех
+                                пользователей, включая тех, кто имеет
+                                ограниченные возможности.
+                            </li>
+                            <li>
+                                <i>Интерактивность</i>
+                                : функциональные элементы, такие как формы,
+                                кнопки и меню, должны быть интуитивно понятными
+                                и работать без задержек.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Методы и инструменты для постановки целей</h1>
+                        <ul>
+                            <li>
+                                <i>Составление целевой аудитории</i>
+                                : кто будут пользователи сайта (их возраст,
+                                интересы, привычки)?
+                            </li>
+                            <li>
+                                <i>Тестирование и анализ</i>
+                                : использование аналитических инструментов,
+                                таких как Google Analytics, для отслеживания
+                                поведения пользователей на сайте и корректировки
+                                целей.
+                            </li>
+                            <li>
+                                <i>
+                                    Установление KPI (ключевых показателей
+                                    эффективности)
+                                </i>
+                                : важно определить, какие показатели будут
+                                использоваться для оценки выполнения целей
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Правила разработки веб-страниц</h1>
+                    </section>
+                    <section>
+                        <h1>Скорость загрузки страницы</h1>
+                        <p>
+                            Скорость загрузки напрямую влияет на восприятие
+                            сайта.
+                            <i>
+                                Пользователи ожидают, что страница загрузится за
+                                2–3 секунды
+                            </i>
+                            . Медленная загрузка может привести к оттоку
+                            посетителей
+                        </p>
+                        <ul>
+                            <li>
+                                <i>
+                                    Используйте современные форматы изображений
+                                </i>
+                                , такие как WebP, которые обеспечивают хорошее
+                                качество при меньшем размере файла.
+                            </li>
+                            <li>
+                                <i>Минимизируйте CSS, JavaScript и HTML</i>
+                                , чтобы уменьшить объем передаваемых данных.
+                            </li>
+                            <li>
+                                <i>Применяйте ленивую загрузку</i>
+                                (lazy loading) для изображений и видео, чтобы
+                                ресурсы загружались только по мере
+                                необходимости.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Удобство использования (юзабилити)</h1>
+                        <p>
+                            Юзабилити сайта определяется тем,
+                            <i>
+                                насколько легко пользователи могут выполнить
+                                свои задачи
+                            </i>
+                            . Удобный сайт повышает лояльность аудитории
+                        </p>
+                        <ul>
+                            <i>Навигация</i>
+                            : Меню должно быть логичным и доступным. Например,
+                            размещение главного меню в верхней части страницы –
+                            привычный и удобный для большинства пользователей
+                            формат.
+                            <i>Форма поиска</i>
+                            : Если на сайте много контента, обеспечьте его поиск
+                            с помощью встроенной строки.
+                            <i>Принципы визуальной иерархии</i>
+                            : Важные элементы (заголовки, кнопки) должны быть
+                            выделены крупным размером, яркими цветами или
+                            контрастом.
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Читаемость шрифтов</h1>
+                        <p>
+                            Шрифты играют ключевую роль в удобстве чтения текста
+                            на экране. Выбор правильного шрифта обеспечивает
+                            комфортное восприятие информации
+                        </p>
+                        <ul>
+                            <li>
+                                <i>
+                                    Наиболее читаемыми для электронных устройств
+                                    являются шрифты без засечек (sans-serif)
+                                </i>
+                                , например, Arial, Helvetica, Roboto, Open Sans.
+                            </li>
+                            <li>
+                                <i>
+                                    Оптимальный размер основного текста: 16–18
+                                    пикселей
+                                </i>
+                                . Для заголовков размер должен быть больше (24
+                                пикселя и выше).
+                            </li>
+                            <li>
+                                <i>
+                                    Минимальный контраст текста с фоном должен
+                                    соответствовать требованиям WCAG
+                                </i>
+                                (например, черный текст на белом фоне или белый
+                                текст на темно-сером фоне).
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Планирование и структура</h1>
+                        <p>
+                            Перед разработкой необходимо четко определить цели
+                            сайта, аудиторию и задачи. Планирование структуры
+                            помогает избежать хаоса в организации контента.
+                        </p>
+                        <ul>
+                            <li>
+                                <i>Разбейте контент на логические разделы</i>
+                                . Например, для корпоративного сайта это могут
+                                быть «О компании», «Услуги», «Контакты».
+                            </li>
+                            <li>
+                                <i>Используйте карту сайта (sitemap)</i>
+                                для упрощения навигации и улучшения индексации
+                                поисковыми системами.
+                            </li>
+                            <li>
+                                В структуре сайта старайтесь соблюдать
+                                <i>
+                                    правило трех кликов: пользователь должен
+                                    найти нужную информацию не более чем за три
+                                    клика
+                                </i>
+                                .
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Адаптивный дизайн</h1>
+                        <p>
+                            Сайт должен быть удобен для просмотра на любых
+                            устройствах: от смартфонов до широкоформатных
+                            мониторов
+                        </p>
+                        <ul>
+                            <li>
+                                Основные разрешения, которые должен поддерживать
+                                сайт:
+                                <i>
+                                    320px (смартфоны), 768px (планшеты), 1024px
+                                    (ноутбуки), 1440px и выше (настольные ПК)
+                                </i>
+                                .
+                            </li>
+                            <li>
+                                Используйте
+                                <i>медиазапросы в CSS</i>
+                                для адаптации интерфейса под разные экраны.
+                            </li>
+                            <li>
+                                Убедитесь, что
+                                <i>
+                                    кнопки и элементы интерфейса достаточно
+                                    крупные для нажатия пальцем на мобильных
+                                    устройствах
+                                </i>
+                                (рекомендуемый размер кнопок — не менее 48px на
+                                48px).
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Тестирование и отладка</h1>
+                        <p>
+                            Перед запуском сайта важно протестировать его
+                            функциональность, внешний вид и производительность
+                        </p>
+                        <ul>
+                            <li>
+                                <i>Проверьте сайт в популярных браузерах</i>
+                                : Google Chrome, Mozilla Firefox, Safari,
+                                Microsoft Edge.
+                            </li>
+                            <li>
+                                <i>
+                                    Тестируйте интерфейс на разных устройствах и
+                                    операционных системах
+                                </i>
+                                .
+                            </li>
+                            <li>
+                                <i>
+                                    Используйте инструменты автоматического
+                                    тестирования, например, Lighthouse
+                                </i>
+                                (встроен в Chrome), чтобы выявить проблемы с
+                                производительностью, SEO и доступностью.
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Тенденции и будущее разработки веб-страниц</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h4>Ускоренные мобильные страницы</h4>
+                                <p>
+                                    помогает создавать легковесные версии
+                                    страниц для мгновенной загрузки
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4>Интеграция искусственного интеллекта</h4>
+                                <p>
+                                    автоматизация с помощью чат-ботов,
+                                    рекомендательных систем и интеллектуального
+                                    поиска
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4>Прогрессивные веб-приложения (PWA)</h4>
+                                <p>
+                                    объединяют преимущества веб-сайтов и
+                                    мобильных приложений
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4>WebAssembly (WASM)</h4>
+                                <p>
+                                    позволяет запускать сложные приложения прямо
+                                    в браузере без потери производительности
+                                </p>
+                            </div>
+                            <div class="border-b">
+                                <h4>Web 3.0</h4>
+                                <p>
+                                    концепция децентрализованного интернета
+                                    (блокчейна)
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h1>Темы для сообщений</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-b">
+                            <h4>Web 3.0</h4>
+                        </div>
+                        <div class="border-b">
+                            <h4>WASM</h4>
+                        </div>
+                        <div class="border-b">
+                            <h4>История развития HTML</h4>
+                        </div>
+                        <div class="border-b">
+                            <h4>Как работают поисковые кроулеры</h4>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
-
         <script src="dist/reveal.js"></script>
         <script src="plugin/notes/notes.js"></script>
         <script src="plugin/markdown/markdown.js"></script>
@@ -218,19 +741,10 @@ var foo = {
         <script src="plugin/mermaid/mermaid.js"></script>
         <script src="plugin/chalkboard/plugin.js"></script>
         <script src="plugin/customcontrols/plugin.js"></script>
-
         <script>
-            tailwind.config = {
-                corePlugins: {
-                    preflight: false,
-                },
-            }
+            tailwind.config = { corePlugins: { preflight: false } }
         </script>
         <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
-
             const colors = {
                 blue0: 'rgb(61, 89, 161)',
                 blue: 'rgb(122, 162, 247)',
@@ -246,10 +760,8 @@ var foo = {
                 bg: 'rgb(26, 27, 38)',
                 transparent: '#00000000',
             }
-
             Reveal.initialize({
                 hash: true,
-                // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [
                     RevealMarkdown,
                     RevealHighlight,

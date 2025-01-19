@@ -2,6 +2,10 @@
  * Dracula Dark theme for reveal.js.
  * Based on https://draculatheme.com
  */
+i {
+  font-style: italic;
+}
+
 /**
  * Dracula colors by Zeno Rocha
  * https://draculatheme.com/contribute
